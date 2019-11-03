@@ -13,7 +13,7 @@ let initAjax = function () {
       // Get Random User Name
       var user_title = $('.u-title');
       user_title.attr({
-        "user-message": "My name is",
+        "user-message": "Hi, My name is",
         "user-info": users.name.first + " " + users.name.last
       })
       //Get Random User Email address

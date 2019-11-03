@@ -13,11 +13,14 @@ body {
   box-sizing: border-box
 }
 #random-user {
-  max-width: 1200px;
+  max-width: 768px;
   margin: 0 auto;
   text-align: center;
   border: 1px solid #ccc;
   margin-top: 12px;
+  margin-top: -200px;
+  background: #fff;
+  padding-bottom: 20px;
 }
 
 .user-details li {
@@ -57,4 +60,20 @@ body {
 .user-details li.selected img{
   filter: invert(69%) sepia(9%) saturate(3257%) hue-rotate(45deg) brightness(105%) contrast(64%);
   transform: scale(1.5);
+}
+.top-black{
+  padding: 150px;
+  background: #2c2e31;
+}
+@media (max-width: 767px){
+  #random-user {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .user-top-info-details{
+    font-size: 1.4rem;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
 }

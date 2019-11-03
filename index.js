@@ -62,10 +62,7 @@ let initAjax = function () {
       $(document).on('mouseover', '.user-details li', function () {
         $('.user-details li').removeClass('selected');
         $(this).addClass('selected');
-        var returned_text = $(this).attr("user-info");
-        var user_greeting = $(this).attr("user-message");
-        $('.user-top-info-intro').text(user_greeting);
-        $('.user-top-info-details').text(returned_text);
+        initTab($(this));
       });
 
       // Init first tab.
@@ -117,5 +114,4 @@ let formatDate = function ( date, params ) {
 
 $(document).ready(function(){
   initAjax();
-  $('.user-details li:first').trigger('mouseover');
 });

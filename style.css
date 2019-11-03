@@ -2,16 +2,20 @@ body {
   margin: 0;
   background: #fff;
   text-align: left;
-  font-family: Arial,"Open Sans",sans-serif;
+  font-family: Arial, "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0;
   color: #333;
 }
-*,::after,::before {
+
+*,
+::after,
+::before {
   box-sizing: border-box
 }
+
 #random-user {
   max-width: 768px;
   margin: 0 auto;
@@ -27,17 +31,20 @@ body {
   display: inline-block;
   margin: 10px;
 }
-.user-info{
+
+.user-info {
   position: relative;
   padding-top: 45px;
 }
-.user-top-info{
+
+.user-top-info {
   position: relative;
   padding-top: 45px;
 }
+
 .user-top-info-img img {
-  width: 137px;
-  border-radius: 50%;    
+  width: 140px;
+  border-radius: 50%;
 }
 
 .user-top-info-intro {
@@ -51,36 +58,42 @@ body {
   font-weight: 700;
   margin: 0;
 }
-.user-top-info-img{
+
+.user-top-info-img {
   border-bottom: 1px solid #ccc;
-    position: relative;
-    background: #fff;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    border: 1px solid rgba(0,0,0,.25);
-    position: relative;
-    margin: 0 auto;
-    z-index: 1;
-    padding: 6px;
+  position: relative;
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, .25);
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 4px;
 }
-.user-details{
+
+.user-details {
   padding: 0;
 }
-.user-details li img{
+
+.user-details li img {
   width: 35px;
   height: 35px;
   transition: transform .2s;
 }
-.user-details li.selected img{
+
+.user-details li.selected img {
   filter: invert(69%) sepia(9%) saturate(3257%) hue-rotate(45deg) brightness(105%) contrast(64%);
   transform: scale(1.5);
 }
-.top-black{
+
+.top-black {
   padding: 150px;
   background: #2c2e31;
 }
+
 .user-top-info:after {
   content: "";
   display: block;
@@ -89,15 +102,17 @@ body {
   height: 130px;
   top: 0;
   background: #f9f9f9;
-  border-bottom: 1px solid rgba(0,0,0,.15);
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
   z-index: 0;
 }
-@media (max-width: 767px){
+
+@media (max-width: 767px) {
   #random-user {
     margin-left: 15px;
     margin-right: 15px;
   }
-  .user-top-info-details{
+
+  .user-top-info-details {
     font-size: 1.4rem;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
